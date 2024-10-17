@@ -28,7 +28,7 @@ d3.csv("../data/td.csv").then(function (data) {
 
   });
 }).catch(function (error) {
-  console.error("Error loading the CSV file: ", error);
+  console.error("error loading CSV file: ", error);
 });
   
 
@@ -38,7 +38,7 @@ d3.csv("../data/td.csv").then(function (data) {
       console.log("Parsed CSV Data:", data);
       return data;
     } catch (error) {
-      console.error("Error loading the CSV file:", error);
+      console.error("error loading CSV file:", error);
       return null;
     }
   }
