@@ -3,7 +3,7 @@
 // import csv from 'csv-parser';
 
 
-d3.csv("../data/td.csv").then(function (data) {
+d3.csv("./data/td.csv").then(function (data) {
   console.log(data);
 
   data.forEach(function(row) {
