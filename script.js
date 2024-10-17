@@ -77,8 +77,6 @@ d3.csv("../data/td.csv").then(function (data) {
 
     d3.select("svg")
       .append("circle")
-      // .attr("height", 200)
-      // .attr("width", 50)
       .attr("cx", xPos2)
       .attr("cy", yPos)
       .attr("r", zeros * .1)
@@ -93,6 +91,14 @@ d3.csv("../data/td.csv").then(function (data) {
       .style("fill", "rgb(227, 227, 227)")
       .text(ones)
 
+    d3.select("svg")
+      .append("text")
+      .attr("x", xPos1)
+      .attr("y", yPos + 80)
+      .attr("text-anchor", "middle")
+      .style("fill", "black")
+      .text("Survivors")
+
     //not alive number
     d3.select("svg")
       .append("text")
@@ -101,6 +107,14 @@ d3.csv("../data/td.csv").then(function (data) {
       .attr("text-anchor", "middle")
       .style("fill", "rgb(227, 227, 227)")
       .text(zeros)
+
+    d3.select("svg")
+      .append("text")
+      .attr("x", xPos2)
+      .attr("y", yPos + 80)
+      .attr("text-anchor", "middle")
+      .style("fill", "red")
+      .text("Deceased")
 
 
 
