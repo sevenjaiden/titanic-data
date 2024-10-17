@@ -34,7 +34,7 @@ d3.csv("./data/td.csv").then(function (data) {
 
   async function parseCSV() {
     try {
-      const data = await d3.csv("../data/td.csv");
+      const data = await d3.csv("./data/td.csv");
       console.log("Parsed CSV Data:", data);
       return data;
     } catch (error) {
